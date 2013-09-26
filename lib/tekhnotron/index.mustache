@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>{{name}} - {{description}}</title>
+	<meta name="keywords"
+	      content="{{band_interests}}">
+	<meta name="description" content="{{description}}">
+	<meta name="viewport" content="width=device-width">
+
+	<meta property="og:title" content="{{name}}">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="http://tekhnotron.com">
+	<meta property="og:site_name" content="Theme Armada">
+	<meta property="og:description"
+	      content="{{description}}">
+
+	<link rel="stylesheet" href="css/production.min.css">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic'
+	      rel='stylesheet' type='text/css'>
+
+	<script src="js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/apple-touch-icon-114-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/apple-touch-icon-72-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" href="/apple-touch-icon-57-precomposed.png">
+	<link rel="shortcut icon" href="/favicon.png">
+</head>
+
+<body id="top" data-spy="scroll" data-target=".navbar">
+
+<div class="navbar navbar-inverse navbar-fixed-top">
+	<div class="navbar-inner">
+		<div class="container">
+			<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</a>
+			<a class="brand" href="index.html"><img src="img/logo.png" alt="logo"></a>
+
+			<div class="nav-collapse collapse">
+				<ul class="nav pull-right">
+					<li><a class="scroll" href="#top">Home</a></li>
+					<li><a class="scroll" href="#connect">Connect</a></li>
+					<li><a class="scroll" href="#content1">About</a></li>
+					<li><a class="scroll" href="#listen">Listen</a></li>
+					<li><a class="scroll" href="#gallery">Gallery</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="header" class="carousel slide animated fadeIn">
+	<div class="carousel-inner">
+		<div class="item one active">
+			<div class="container animated fadeInUp">
+			</div>
+		</div>
+		<div class="item two">
+			<div class="container">
+			</div>
+		</div>
+		<div class="item three">
+			<div class="container">
+			</div>
+		</div>
+		<div class="item four">
+			<div class="container">
+			</div>
+		</div>
+		<div class="item five">
+			<div class="container">
+			</div>
+		</div>
+	</div>
+	<a class="left carousel-control hidden-phone" href="#header" data-slide="prev"><i class="icon-angle-left"></i></a>
+	<a class="right carousel-control hidden-phone" href="#header" data-slide="next"><i class="icon-angle-right"></i></a>
+</div>
+
+<section id="connect">
+	<div class="container">
+		<div class="row">
+			<div class="span10 offset1 text-center">
+				<h2>Visit us on <span id="social-network">...</span></h2>
+				<hr>
+				<!--Social Icons-->
+				<ul class="social-icons">
+					<li><a class="facebook" href="http://facebook.com/tekhnotron.music" target="_blank">Facebook</a>
+					</li>
+					<li><a class="twitter" href="http://www.twitter.com/tekhnotron" target="_blank">Twitter</a></li>
+					<li><a class="soundcloud" href="http://soundcloud.com/tekhnotron" target="_blank">Soundcloud</a>
+					</li>
+					<li><a class="bandcamp" href="http://tekhnotron.bandcamp.com/" target="_blank">Bandcamp</a></li>
+					<li><a class="reverb" href="http://www.reverbnation.com/tekhnotron" target="_blank">Reverb
+						Nation</a></li>
+					<li><a class="youtube" href="http://www.youtube.com/user/Tekhnotron" target="_blank">Youtube</a>
+					</li>
+				</ul>
+				<hr>
+			</div>
+		</div>
+		<div class="row margin-40">
+			<div class="span10 offset1 text-center">
+				<p><a href="mailto:info@tekhnotron.com"><i class="icon-envelope-alt"></i> info@tekhnotron.com</a></p>
+			</div>
+			<div class="span10 offset1 text-center">
+				<p style="font-size: 2em; margin-top: 2em;"><a style="color: #205F50;" href="http://tekhnotron.bandcamp.com/yum" target="_blank">
+					<i class="icon-gift"></i> Redeem download code</a>
+				</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="content1">
+	<div class="container">
+		<div class="row">
+			<div class="span10">
+				<h3>About {{name}}</h3>
+
+				<p class="lead">{{description}}</p>
+
+				<p>{{{htmlize bio}}}</p><br/>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="listen">
+	<div class="container">
+		<div class="row margin-40">
+			<div class="span12 text-center">
+				<iframe style="margin: 0 auto; width: 450px; height: 450px;"
+				        src="http://bandcamp.com/EmbeddedPlayer/album=757146121/size=large/bgcol=ffffff/linkcol=204b6e/transparent=true/"
+				        seamless><a href="http://tekhnotron.bandcamp.com/album/tekhnotron">Tekhnotron (min-album)</a></iframe>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="gallery">
+	<div class="container text-center">
+		<div class="row">
+			<div class="span12 margin-40">
+				<h2>Gallery</h2>
+			</div>
+		</div>
+		<div class="row margin-40">
+			{{#gallery}}
+			<div class="span4">
+				<div class="thumbs">
+					<img src="{{source}}" alt="Image Size 430x280">
+					<a href="{{link}}" target="_blank">
+                        <span class="title">
+                            <span><i class="icon-facebook icon-2x"></i></span>
+                        </span>
+					</a>
+				</div>
+			</div>
+			{{/gallery}}
+		</div>
+	</div>
+</section>
+
+<section id="footer">
+	<div class="container">
+		<div class="row">
+			<div class="span12 text-center">
+				<p>&copy; {{year}}. All Rights Reserved. Created by Tekhnotron
+				</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<a href="#top" class="scrollToTop hidden-phone"><i class="icon-chevron-up"></i></a>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="js/production.min.js"></script>
+
+</body>
+</html>
