@@ -1,7 +1,7 @@
 {
   "name": "todos.feathersjs.com",
   "description": "feathers.com Todo example.",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "homepage": "http://feathersjs.com",
   "author": {
     "name": "David Luecke"
@@ -11,13 +11,15 @@
     "url": "git@heroku.com:feathers.git"
   },
   "engines": {
-    "node": ">= 0.10.0"
+    "node": "^0.10.0"
   },
   "scripts": {
     "start": "node lib/app.js"
   },
   "main": "lib/app.js",
   "dependencies": {
-    
+    "underscore": "~1.4.4",
+    "feathers": "~1.0.0",
+    "rate-limiter": "~0.2.0"
   }
 }
