@@ -1,1 +1,3 @@
-# Feathers Todo demo Heroku application
+# Feathers Todo
+
+Demo application
