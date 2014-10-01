@@ -20,7 +20,7 @@
   "dependencies": {
     "request": "~2.21.0",
     "underscore": "~1.4.4",
-    "feathers": "~0.3.0",
+    "feathers": "~1.0.0",
     "rate-limiter": "~0.2.0"
   }
 }
