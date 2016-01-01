@@ -15,9 +15,9 @@
     "node": "^0.10.0"
   },
   "scripts": {
-    "start": "node lib/app.js"
+    "start": "node src/app.js"
   },
-  "main": "lib/app.js",
+  "main": "src/app.js",
   "dependencies": {
     "underscore": "~1.4.4",
     "feathers": "~1.0.0",
