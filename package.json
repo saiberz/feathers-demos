@@ -2,13 +2,14 @@
   "name": "todos.feathersjs.com",
   "description": "feathers.com Todo example.",
   "version": "0.1.0",
+  "private": true,
   "homepage": "http://feathersjs.com",
   "author": {
     "name": "David Luecke"
   },
   "repository": {
     "type": "git",
-    "url": "git@heroku.com:feathers.git"
+    "url": "git@github.com:feathersjs/feathers-demo.git"
   },
   "engines": {
     "node": "^0.10.0"
