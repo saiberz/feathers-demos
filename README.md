@@ -4,6 +4,8 @@
 
 **Not meant for public reference. This is a very old app. Please see [the quick start guide](http://feathersjs.com/quick-start/).**
 
+It is also currently running as a standalone version at [demo.feathersjs.com](http://demo.feathersjscom).
+
 ## Getting started
 
 ### With Docker
