@@ -68,7 +68,7 @@ var app = feathers()
 var noop = function() {};
 
 setInterval(function updateTodos() {
-  var todoService = app.lookup('todos');
+  var todoService = app.service('todos');
   todoService.find({}, function(error, allTodos) {
     var todos = _.filter(allTodos, function(todo) {
       return todo.server;
@@ -88,4 +88,8 @@ setInterval(function updateTodos() {
   });
 }, 5000);
 
-app.listen(process.env.PORT || 3000);
+var port = process.env.PORT || 8080;
+
+app.listen(port, function(){
+  console.log('Feathers Todo demo running on 0.0.0.0:' + port);
+});
