@@ -20,7 +20,7 @@
   "main": "src/app.js",
   "dependencies": {
     "underscore": "~1.4.4",
-    "feathers": "~1.0.0",
+    "feathers": "=1.0.0",
     "rate-limiter": "~0.2.0"
   }
 }
