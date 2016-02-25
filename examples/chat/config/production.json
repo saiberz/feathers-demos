@@ -1,0 +1,20 @@
+{
+  "port": "PORT",
+  "mongodb": "DATABASE_URL",
+  "public": "../public/",
+  "auth": {
+    "token": {
+      "secret": "FEATHERS_AUTH_SECRET"
+    },
+    "local": {
+      "usernameField": "username"
+    },
+    "github": {
+      "clientID": "GITHUB_CLIENT_ID",
+      "clientSecret": "GITHUB_CLIENT_SECRET",
+      "permissions": {
+        "scope": []
+      }
+    }
+  }
+}
