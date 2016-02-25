@@ -6,7 +6,9 @@
     "token": {
       "secret": "FEATHERS_AUTH_SECRET"
     },
-    "local": {},
+    "local": {
+      "usernameField": "username"
+    },
     "github": {
       "clientID": "GITHUB_CLIENT_ID",
       "clientSecret": "GITHUB_CLIENT_SECRET",

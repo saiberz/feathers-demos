@@ -7,7 +7,9 @@
     "token": {
       "secret": "8nQbwI19P1IkT8yqdmBapFFrriB3jyN1c2mAD1gRsYcGvPhZs6HxAk0q1q7GtqYOPxB327DCrFsWDnsEN3Unzg=="
     },
-    "local": {},
+    "local": {
+      "usernameField": "username"
+    },
     "github": {
       "clientID": "your github client id",
       "clientSecret": "your github client secret",
