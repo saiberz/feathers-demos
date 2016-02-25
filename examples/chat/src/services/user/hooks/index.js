@@ -1,6 +1,8 @@
 'use strict';
 
+const serializeUser = require('./serialize-user');
 const globalHooks = require('../../../hooks');
+const hooks = require('feathers-hooks');
 const auth = require('feathers-authentication').hooks;
 
 exports.before = {
@@ -18,25 +20,18 @@ exports.before = {
   create: [
     auth.hashPassword()
   ],
-  update: [
-    auth.verifyToken(),
-    auth.populateUser(),
-    auth.requireAuth()
-  ],
+  update: hooks.disable(),
   patch: [
     auth.verifyToken(),
     auth.populateUser(),
-    auth.requireAuth()
+    auth.requireAuth(),
+    auth.restrictToSelf()
   ],
-  remove: [
-    auth.verifyToken(),
-    auth.populateUser(),
-    auth.requireAuth()
-  ]
+  remove: hooks.disable()
 };
 
 exports.after = {
-  all: [],
+  all: [serializeUser()],
   find: [],
   get: [],
   create: [],
