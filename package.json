@@ -1,26 +1,21 @@
 {
-  "name": "todos.feathersjs.com",
-  "description": "feathers.com Todo example.",
+  "name": "feathers-demos",
+  "description": "feathers.com examples.",
   "version": "0.1.0",
   "private": true,
   "homepage": "http://feathersjs.com",
   "author": {
-    "name": "David Luecke"
+    "name": "Feathers contributors",
+    "email": "hello@feathersjs.com",
+    "url": "https://feathersjs.com"
   },
+  "contributors": [],
   "repository": {
     "type": "git",
-    "url": "git@github.com:feathersjs/feathers-demo.git"
+    "url": "git@github.com:feathersjs/feathers-demos.git"
   },
   "engines": {
-    "node": "^0.10.0"
+    "node": "^5.0.0"
   },
-  "scripts": {
-    "start": "node app/src/app.js"
-  },
-  "main": "src/app.js",
-  "dependencies": {
-    "underscore": "~1.4.4",
-    "feathers": "=1.0.0",
-    "rate-limiter": "~0.2.0"
-  }
+  "dependencies": {}
 }
