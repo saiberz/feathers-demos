@@ -18,6 +18,11 @@ const app = feathers();
 
 app.configure(configuration(path.join(__dirname, '..')));
 
+// Enabling for our rate limiting
+// only if you're behind a reverse proxy (Heroku, Bluemix,
+// AWS if you use an ELB, custom Nginx setup, etc) 
+// app.enable('trust proxy');
+
 app.use(compress())
   .options('*', cors())
   .use(cors())
