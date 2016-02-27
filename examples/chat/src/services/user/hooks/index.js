@@ -1,6 +1,5 @@
 'use strict';
 
-const serializeUser = require('./serialize-user');
 const globalHooks = require('../../../hooks');
 const hooks = require('feathers-hooks');
 const auth = require('feathers-authentication').hooks;
@@ -31,7 +30,7 @@ exports.before = {
 };
 
 exports.after = {
-  all: [serializeUser()],
+  all: [hooks.remove('password')],
   find: [],
   get: [],
   create: [],
