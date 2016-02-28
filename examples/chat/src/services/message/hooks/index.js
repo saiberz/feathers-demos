@@ -3,6 +3,7 @@
 const populateSender = require('./populate-sender');
 const globalHooks = require('../../../hooks');
 const auth = require('feathers-authentication').hooks;
+const hooks = require('feathers-mongoose').hooks;
 
 exports.before = {
   all: [
@@ -20,9 +21,18 @@ exports.before = {
 
 exports.after = {
   all: [],
-  find: [populateSender()],
-  get: [populateSender()],
-  create: [populateSender()],
+  find: [
+    hooks.toObject(),
+    populateSender()
+  ],
+  get: [
+    hooks.toObject(),
+    populateSender()
+  ],
+  create: [
+    hooks.toObject(),
+    populateSender()
+  ],
   update: [],
   patch: [],
   remove: []

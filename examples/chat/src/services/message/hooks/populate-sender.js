@@ -28,13 +28,12 @@ module.exports = function(options) {
               resolve(hook);
             }).catch(reject);
         }
+        
         // Handle single objects.
-        else {
-          populateSender(hook.result).then(message => {
-            hook.result.data = message;
-            resolve(hook);
-          }).catch(reject);
-        }
+        return populateSender(hook.result).then(message => {
+          hook.result = message;
+          resolve(hook);
+        }).catch(reject);
       });
     }
   };
