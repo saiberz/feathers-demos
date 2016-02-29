@@ -14,9 +14,11 @@ exports.before = {
   find: [],
   get: [],
   create: [auth.setUserId({destProp: 'sentBy'})],
-  update: [auth.queryWithUserId({ idOnResouce: 'sentBy' })],
-  patch: [auth.queryWithUserId({ idOnResouce: 'sentBy' })],
-  remove: [auth.queryWithUserId({ idOnResouce: 'sentBy' })]
+  update: [auth.queryWithUserId({ idOnResource: 'sentBy' })],
+  patch: [auth.queryWithUserId({ idOnResource: 'sentBy' })],
+  remove: [auth.queryWithUserId({ idOnResource: 'sentBy' }), function(hook) {
+    console.log(hook.params);
+  }]
 };
 
 exports.after = {
