@@ -1,0 +1,96 @@
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0" />
+    <title>Feathers Chat</title>
+    <meta name="description" content="an example real-time chat app built with Feathers" />
+    <meta name="author" content="Feathers Contributors">
+    <meta name="keywords" content="Feathers, chat, real-time" />
+
+    <link rel="shortcut icon" href="img/favicon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="chat.css">
+  </head>
+  <body>
+    <div id="app" class="flex flex-column">
+      <header class="title-bar flex flex-row flex-center">
+        <div class="title-wrapper block center-element">
+          <img class="logo" src="http://feathersjs.com/img/feathers-logo-wide.png" alt="Feathers Logo">
+          <span class="title">Chat</span>
+        </div>
+      </header>
+      
+      <div class="flex flex-row flex-1 clear">
+        <aside class="sidebar col col-3 flex flex-column flex-space-between">
+          <header class="flex flex-row flex-center">
+            <h4 class="font-300 text-center"><span class="font-600 online-count">17</span>people online</h4>  
+          </header>
+          
+          <ul class="flex flex-column flex-1 list-unstyled user-list">
+            <li>
+              <a class="block relative" href="#">
+                <img src="http://placehold.it/60x60" alt="" class="avatar">
+                <span class="absolute username">Johnny5</span>
+              </a>
+            </li>
+            <li>
+              <a class="block relative" href="#">
+                <img src="http://placehold.it/60x60" alt="" class="avatar">
+                <span class="absolute username">Sarah1985</span>
+              </a>
+            </li>
+          </ul>
+          <footer class="flex flex-row flex-center">
+            <a href="#" class="button button-primary">Sign Out</a>
+          </footer>
+        </aside>
+
+        <div class="flex flex-column col col-9">
+          <main class="chat flex flex-column flex-1 clear">
+            <div class="message flex flex-row">
+              <img src="http://placehold.it/60x60" alt="" class="avatar">
+              <div class="message-wrapper">
+                <p class="message-header">
+                  <span class="username font-600">Johnny5</span>
+                  <span class="sent-date font-300">10:20 AM</span>
+                </p>
+                <p class="message-content font-300">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              </div>
+            </div>
+
+            <div class="message flex flex-row">
+              <img src="http://placehold.it/60x60" alt="" class="avatar">
+              <div class="message-wrapper">
+                <p class="message-header">
+                  <span class="username font-600">Sarah1985</span>
+                  <span class="sent-date font-300">10:21 AM</span>
+                </p>
+                <p class="message-content font-300">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi mollitia, vitae! Est, esse odit temporibus labore reprehenderit quae explicabo modi fugit qui laborum officia saepe fuga suscipit similique, at beatae.</p>
+              </div>
+            </div>
+
+            <div class="message flex flex-row">
+              <img src="http://placehold.it/60x60" alt="" class="avatar">
+              <div class="message-wrapper">
+                <p class="message-header">
+                  <span class="username font-600">Johnny5</span>
+                  <span class="sent-date font-300">10:24 AM</span>
+                </p>
+                <p class="message-content font-300">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              </div>
+            </div>
+          </main>
+
+          <footer class="flex flex-row flex-space-between">
+            <input type="text" class="flex">
+            <button class="button-primary submit">Send</button>
+          </footer>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
