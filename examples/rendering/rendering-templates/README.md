@@ -1,6 +1,6 @@
 # Feathers Template Rendering
 
-An example of rendering templates using Feathers and the Jade template engine to render custom error pages and pages with data from services.
+An example of rendering templates using Feathers and the [Jade](http://jade-lang.com/) template engine to render custom error pages and pages with data from services.
 
 ## To run
 
