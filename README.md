@@ -1,6 +1,7 @@
 # Feathers Demos
 
-> A collection of demo apps using Feathers
+> A collection of example apps using Feathers
 
+This is just a start and we are adding more every week.
 
-This is just a start and we have more on the way but we also have a fully working chat app in the [feathers-chat](https://github.com/feathersjs/feathers-chat) repo.
+We also have a fully working chat app in the [feathers-chat](https://github.com/feathersjs/feathers-chat) repo.
