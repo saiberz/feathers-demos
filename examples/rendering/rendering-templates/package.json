@@ -1,0 +1,32 @@
+{
+  "name": "feathers-rendering-templates",
+  "description": "An example of rendering templates",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "",
+  "main": "app.js",
+  "keywords": [
+    "feathers"
+  ],
+  "license": "MIT",
+  "repository": {},
+  "author": {},
+  "contributors": [],
+  "bugs": {},
+  "engines": {
+    "node": ">= 0.12.0"
+  },
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "feathers": "^2.0.0",
+    "feathers-errors": "^2.0.1",
+    "feathers-hooks": "^1.5.0",
+    "feathers-memory": "^0.7.1",
+    "feathers-rest": "^1.2.4",
+    "jade": "^1.11.0"
+  },
+  "devDependencies": {}
+}
