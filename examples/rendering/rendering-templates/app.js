@@ -18,6 +18,7 @@ const app = feathers()
     next(new errors.NotFound());
   })
   .use(errorHandler({
+    // Using a custom error handler with our template engine
     html: function(error, req, res, next) {
       res.render('error', { error });
     }
