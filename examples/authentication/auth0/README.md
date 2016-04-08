@@ -4,7 +4,7 @@ An example of using Auth0 to authenticate.
 
 ## To run
 
-1. Sign up for Auth0
+1. Sign up for [Auth0](https://auth0.com/)
 2. Setup your app
     - Set your "Allowed callback URLs" to: `http://localhost:3030/auth/auth0/callback`
     - Set your "Allowed Logout URLs" to: `http://localhost:3030/`
