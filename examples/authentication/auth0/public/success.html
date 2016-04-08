@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Feathers Auth0 Success</title>
+</head>
+<body>
+  <h1>Feathers Auth0 Succeeded</h1>
+  <!-- Make sure to change your Auth0 domain -->
+  <a href="https://yourdomain.auth0.com/v2/logout?federated&returnTo=http://localhost:3030/" id="logout">Logout</a>
+  <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+  <script type="text/javascript" src="//npmcdn.com/feathers-client@^1.0.0/dist/feathers.js"></script>
+  <script type="text/javascript">
+    var host = 'http://localhost:3030';
+
+    // Set up Feathers client side
+    var app = feathers()
+      .configure(feathers.rest(host).jquery(jQuery))
+      .configure(feathers.hooks())
+      .configure(feathers.authentication({ storage: window.localStorage }));
+
+    // authenticate using your JWT that was passed in the short lived cookie
+    app.authenticate().then(function(result){
+      console.log('Authenticated!', result);
+      alert('Your JWT is: ' + app.get('token'));
+    }).catch(function(error){
+      console.error('Error authenticating!', error);
+    });
+
+    $('#logout').on('click', function(ev) {
+      app.logout();
+    });
+  </script>
+
+</body>
+</html>
