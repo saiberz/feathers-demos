@@ -1,6 +1,6 @@
 {
   "name": "feathers-auth0-authentication",
-  "description": "An example of rendering templates",
+  "description": "An example of Auth0 authentication with Feathers",
   "version": "0.1.0",
   "private": true,
   "homepage": "",
