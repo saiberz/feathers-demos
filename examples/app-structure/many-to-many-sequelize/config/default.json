@@ -1,0 +1,13 @@
+{
+  "host": "localhost",
+  "port": 3030,
+  "sqlite": "../data/manyToManySequelize.sqlite",
+  "public": "../public/",
+  "auth": {
+    "idField": "id",
+    "token": {
+      "secret": "mx7V7GHWmodt+Vdu5mdh1TXw4NST8a8HYcMXh3tBLlMJhWKo/O8Rc05TtL6MkfOlLmbNZooIAE7zcC7XLnQ6Ew=="
+    },
+    "local": {}
+  }
+}
