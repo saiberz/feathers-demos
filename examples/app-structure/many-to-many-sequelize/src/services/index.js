@@ -30,5 +30,5 @@ module.exports = function() {
     .filter(model => model.associate !== undefined)
     .forEach(model => model.associate());
 
-  sequelize.sync({force: true});
+  sequelize.sync();
 };
