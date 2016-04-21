@@ -1,4 +1,4 @@
-# Feathers Auth0 Authentcation
+# Feathers Auth0 Authentication
 
 An example of using Auth0 to authenticate.
 
