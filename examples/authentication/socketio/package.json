@@ -1,6 +1,6 @@
 {
-  "name": "feathers-auth0-authentication",
-  "description": "An example of Auth0 authentication with Feathers",
+  "name": "feathers-socketio-authentication",
+  "description": "An example of Socket.IO authentication with Feathers",
   "version": "0.1.0",
   "private": true,
   "homepage": "",
@@ -27,8 +27,7 @@
     "feathers-hooks": "^1.5.0",
     "feathers-memory": "^0.7.1",
     "feathers-rest": "^1.2.4",
-    "feathers-socketio": "^1.3.4",
-    "passport-auth0": "^0.5.1"
+    "feathers-socketio": "^1.3.4"
   },
   "devDependencies": {}
 }
