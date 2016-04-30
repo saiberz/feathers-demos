@@ -1,4 +1,4 @@
-# Feathers OAuth2 Authentcation
+# Feathers OAuth2 Authentication
 
 An example of using Github's OAuth 2 authentication.
 
