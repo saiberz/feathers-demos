@@ -7,6 +7,8 @@ var app = feathers()
   .use('/api', api)
   .use('/', feathers.static(__dirname + '/public'));
 
-app.listen(3030);
+const server = app.listen(3030);
 
-console.log('Feathers authentication app started on 127.0.0.1:3030');
+api.setup(server);
+
+console.log('Feathers sub-app example started on 127.0.0.1:3030');
