@@ -1,11 +1,11 @@
-var feathers = require('feathers');
-var rest = require('feathers-rest');
-var hooks = require('feathers-hooks');
-var memory = require('feathers-memory');
-var bodyParser = require('body-parser');
-var errorHandler = require('feathers-errors/handler');
+let feathers = require('feathers');
+let rest = require('feathers-rest');
+let hooks = require('feathers-hooks');
+let memory = require('feathers-memory');
+let bodyParser = require('body-parser');
+let errorHandler = require('feathers-errors/handler');
 
-var app = feathers()
+let app = feathers()
   .configure(rest())
   .configure(hooks())
   .use('/', feathers.static(__dirname + '/public'))
