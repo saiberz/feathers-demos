@@ -15,7 +15,4 @@ let app = feathers()
   .use('/messages', memory())
   .use(errorHandler());
 
-const messageService = app.service('messages');
-messageService.create({text: 'A v1 message'}, {}, function(){});
-
 module.exports = app;
