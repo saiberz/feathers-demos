@@ -1,7 +1,6 @@
 let feathers = require('feathers');
 let rest = require('feathers-rest');
 let socketio = require('feathers-socketio');
-let hooks = require('feathers-hooks');
 let apiV1 = require('./api/v1');
 let apiV2 = require('./api/v2');
 
@@ -9,7 +8,6 @@ let apiV2 = require('./api/v2');
 let app = feathers()
   .configure(rest())
   .configure(socketio())
-  .configure(hooks())
   // Initialize our API sub apps
   .use('/api/v1', apiV1)
   .use('/api/v2', apiV2)
