@@ -1,11 +1,14 @@
 'use strict';
+
 const channel = require('./channel');
 const message = require('./message');
 const authentication = require('./authentication');
 const user = require('./user');
-
+const userChannel = require('./user-channel');
 const path = require('path');
-const fs = require('fs-extra');const Sequelize = require('sequelize');
+const fs = require('fs-extra');
+const Sequelize = require('sequelize');
+
 module.exports = function() {
   const app = this;
 
@@ -23,6 +26,7 @@ module.exports = function() {
   app.configure(user);
   app.configure(message);
   app.configure(channel);
+  app.configure(userChannel);
 
   // Associate all of our models
   Object.keys(sequelize.models)
