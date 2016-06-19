@@ -1,0 +1,54 @@
+{
+  "name": "messages",
+  "require": "feathers-mongodb",
+  "options": {
+    "Model": "./message.model",
+    "paginate": {
+      "default": 5,
+      "max": 20
+    }
+  },
+  "before": {
+    "all": [
+      "feathers-authentication/hooks/verify-token",
+      "feathers-authentication/hooks/populate-user",
+      "feathers-authentication/hooks/restrict-to-authenticated"
+    ],
+    "create": [
+      "./hooks/process"
+    ],
+    "update": [
+      {
+        "require": "feathers-hooks/hooks/remove",
+        "options": {
+          "fields": ["sentBy"]
+        }
+      },
+      "./hooks/restrict-to-sender"
+    ],
+    "patch": [
+      {
+        "require": "feathers-hooks/hooks/remove",
+        "options": {
+          "fields": ["sentBy"]
+        }
+      },
+      "./hooks/restrict-to-sender"
+    ]
+  },
+  "after": {
+    "find": [
+      {
+        "require": "feathers-hooks/hooks/remove",
+        "options": {
+          "fields": ["sentBy"]
+        }
+      }
+    ],
+    "get": [
+    ],
+    "create": [
+      "./hooks/send-welcome"
+    ]
+  }
+}

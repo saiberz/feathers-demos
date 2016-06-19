@@ -1,0 +1,65 @@
+{
+  "name": "Feathers Chat",
+  "description": "A real-time chat API built with Feathers and MongoDB",
+  "main": "./src/index",
+  "services": [
+    "./src/services/user/user.service.json",
+    "./src/services/message/message.service.json",
+  ],
+  "infrastructure": {
+    "production": {
+      "type": "heroku",
+      "website": "http://chat.feathersjs.com",
+      "repository": "https://github.com/feathersjs/feathers-chat",
+      "logo": "http://s32.postimg.org/4k9q912x1/aar_QEIys.jpg",
+      "success_url": "/",
+      "env": {
+        "FEATHERS_AUTH_SECRET": {
+          "description": "Your secret for encrypting JWT's used with Feather authentication",
+          "required": true,
+          "generator": "secret"
+        }
+      },
+      "formation": {
+        "web": {
+          "quantity": 1,
+          "size": "small"
+        }
+      },
+      "image": "heroku/nodejs",
+      "addons": [
+        "mongohq:ssd_1g_elastic",
+        "sendgrid:starter"
+      ]
+    },
+    "staging": {
+      "type": "heroku",
+      "website": "http://chat-staging.feathersjs.com",
+      "repository": "https://github.com/feathersjs/feathers-chat",
+      "logo": "http://s32.postimg.org/4k9q912x1/aar_QEIys.jpg",
+      "success_url": "/",
+      "env": {
+        "FEATHERS_AUTH_SECRET": {
+          "description": "Your secret for encrypting JWT's used with Feather authentication",
+          "required": true,
+          "generator": "secret"
+        },
+        "NODE_ENV": {
+          "description": "Your node environment, set to staging",
+          "required": true
+        },
+      },
+      "formation": {
+        "web": {
+          "quantity": 1,
+          "size": "small"
+        }
+      },
+      "image": "heroku/nodejs",
+      "addons": [
+        "mongohq:ssd_1g_elastic",
+        "sendgrid:starter"
+      ]
+    }
+  }
+}

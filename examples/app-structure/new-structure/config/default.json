@@ -1,0 +1,13 @@
+{
+  "host": "localhost",
+  "port": 3030,
+  "mongodb": "mongodb://localhost:27017/newStructure",
+  "public": "../public/",
+  "auth": {
+    "token": {
+      "secret": "WSRYsXV5h/ZRCDjK/gnxKPTLltbuFeUShi84HQxUWNC26h2/IlRU1Vl6dPt4nJvqZNgKeHgSidcRDbVefk+RQA=="
+    },
+    "local": {},
+    "successRedirect": "/jquery-chat/"
+  }
+}
