@@ -11,7 +11,7 @@ const Schema = mongoose.Schema;
 module.exports = function(options = {}) {
   const app = this;
   const messageSchema = new Schema({
-    text: { type: String, required: true, unique: true },
+    text: { type: String, required: true },
     sentBy: { type: Schema.Types.ObjectId, required: true },
     createdAt: { type: Date, 'default': Date.now },
     updatedAt: { type: Date, 'default': Date.now }
