@@ -2,7 +2,7 @@
   "name": "users",
   "require": "feathers-mongodb",
   "options": {
-    "Model": "./user.model",
+    "Model": { "require": "./user.model" },
     "paginate": {
       "default": 5,
       "max": 20
@@ -18,14 +18,14 @@
       }
     ],
     "find": [
-      "feathers-authentication/hooks/verify-token",
-      "feathers-authentication/hooks/populate-user",
-      "feathers-authentication/hooks/restrict-to-authenticated"
+      { "require": "feathers-authentication/hooks/verify-token" },
+      { "require": "feathers-authentication/hooks/populate-user" },
+      { "require": "feathers-authentication/hooks/restrict-to-authenticated" }
     ]
   },
   "after": {
     "create": [
-      "./hooks/send-welcome"
+      { "require": "./hooks/send-welcome" }
     ]
   }
 }

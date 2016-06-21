@@ -10,12 +10,12 @@
   },
   "before": {
     "all": [
-      "feathers-authentication/hooks/verify-token",
-      "feathers-authentication/hooks/populate-user",
-      "feathers-authentication/hooks/restrict-to-authenticated"
+      { "require": "feathers-authentication/hooks/verify-token" },
+      { "require": "feathers-authentication/hooks/populate-user" },
+      { "require": "feathers-authentication/hooks/restrict-to-authenticated" }
     ],
     "create": [
-      "./hooks/process"
+      { "require": "./hooks/process" }
     ],
     "update": [
       {
@@ -24,7 +24,7 @@
           "fields": ["sentBy"]
         }
       },
-      "./hooks/restrict-to-sender"
+      { "require": "./hooks/restrict-to-sender" }
     ],
     "patch": [
       {
@@ -33,7 +33,7 @@
           "fields": ["sentBy"]
         }
       },
-      "./hooks/restrict-to-sender"
+      { "require": "./hooks/restrict-to-sender" }
     ]
   },
   "after": {
@@ -48,7 +48,7 @@
     "get": [
     ],
     "create": [
-      "./hooks/send-welcome"
+      { "require": "./hooks/send-welcome" }
     ]
   }
 }
