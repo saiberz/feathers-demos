@@ -1,7 +1,7 @@
 {
   "host": "new-structure-app.feathersjs.com",
-  "port": 80,
-  "mongodb": "DATABASE_URL",
+  "port": "PORT",
+  "mongodb": "MONGOHQ_URL",
   "public": "../public/",
   "auth": {
     "token": {

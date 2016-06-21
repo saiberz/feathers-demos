@@ -20,12 +20,13 @@
           "generator": "secret"
         }
       },
-      "formation": {
-        "web": {
+      "formation": [
+        {
           "quantity": 1,
-          "size": "small"
+          "size": "free",
+          "type": "web"
         }
-      },
+      ],
       "image": "heroku/nodejs",
       "addons": [
         "mongohq:ssd_1g_elastic",
@@ -49,12 +50,13 @@
           "required": true
         },
       },
-      "formation": {
-        "web": {
+      "formation": [
+        {
           "quantity": 1,
-          "size": "small"
+          "size": "free",
+          "type": "web"
         }
-      },
+      ],
       "image": "heroku/nodejs",
       "addons": [
         "mongohq:ssd_1g_elastic",
