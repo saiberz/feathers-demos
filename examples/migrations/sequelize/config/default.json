@@ -1,0 +1,6 @@
+{
+	"host": "localhost",
+	"port": 3030,
+	"db_url": "DATABASE_URL",
+	"db_dialect": "postgres"
+}
